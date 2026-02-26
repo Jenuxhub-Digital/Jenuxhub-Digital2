@@ -6,16 +6,25 @@
   <meta name="description" content="Jenuxhub Digital - Start earning good money with high digital skills">
   <title>Jenuxhub Digital</title>
 
-  <!-- TikTok Pixel -->
+  <!-- TikTok Pixel Code Start -->
   <script>
-  !function(w,d,t){
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
-)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-    ttq.load('YOUR_TIKTOK_PIXEL_ID'); // Replace with your TikTok Pixel ID
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;
+    var ttq=w[t]=w[t]||[];
+    ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+    ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+    ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;
+    ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
+    n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;
+    e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    
+    ttq.load('D6GCLEBC77U41D70QM40'); // Your TikTok Pixel ID
     ttq.page();
   }(window, document, 'ttq');
   </script>
-  <!-- End TikTok Pixel -->
+  <!-- TikTok Pixel Code End -->
 
   <style>
     * {margin:0; padding:0; box-sizing:border-box;}
@@ -34,7 +43,6 @@
       padding: 35px;
       border-radius: 15px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      animation: fadeInUp 1s ease;
     }
     h2 {
       font-size: 24px;
@@ -43,7 +51,6 @@
       margin-bottom: 10px;
       color: #000;
       line-height: 1.4;
-      animation: fadeInHeading 1.2s ease;
     }
     h3 {
       font-size: 22px;
@@ -51,7 +58,6 @@
       text-align: center;
       margin-bottom: 25px;
       color: #e60023;
-      animation: fadeInHeading 1.4s ease;
     }
     .subtitle {
       text-align: center;
@@ -110,14 +116,6 @@
       font-size: 12px;
       color: #888;
       margin-top: 25px;
-    }
-    @keyframes fadeInUp {
-      from {opacity:0; transform: translateY(20px);}
-      to {opacity:1; transform: translateY(0);}
-    }
-    @keyframes fadeInHeading {
-      from {opacity:0; transform: translateY(-10px);}
-      to {opacity:1; transform: translateY(0);}
     }
   </style>
 </head>
